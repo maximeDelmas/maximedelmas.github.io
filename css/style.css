@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -116,6 +116,110 @@ section {
     margin-top: 0;
 }
 
+.timeline {
+    position: relative;
+    padding-left: 9rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 8rem;
+    top: 0.75rem;
+    bottom: 2rem;
+    width: 2px;
+    background: #e5e7eb;
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-bottom: 0;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-year {
+    position: absolute;
+    left: -9rem;
+    top: 0.35rem;
+    width: 7rem;
+    text-align: right;
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -1.5rem;
+    top: 0.3rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 2px var(--accent);
+    z-index: 1;
+}
+
+.experience-content {
+    padding-left: 0.5rem;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.experience-header h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.experience-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--text);
+}
+
+.experience-header .date {
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.institution {
+    color: var(--muted);
+    margin: 0.25rem 0 0.75rem 0;
+    font-style: italic;
+}
+
+.subject {
+    margin: 0.5rem 0 0 0;
+    line-height: 1.6;
+}
+
+.experience-item ul {
+    margin: 0.75rem 0 0 0;
+    padding-left: 1.5rem;
+}
+
+.experience-item li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
 @media (max-width: 768px) {
     .about-section {
         flex-direction: column;
@@ -124,6 +228,20 @@ section {
     .profile-image {
         width: 150px;
         height: 150px;
+    }
+    
+    .timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline::before {
+        left: 0.3rem;
+    }
+    
+    .timeline-dot {
+        left: -1.2rem;
+        width: 12px;
+        height: 12px;
     }
 }
 
