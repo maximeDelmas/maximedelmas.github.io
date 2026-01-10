@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    max-width: 720px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -79,8 +79,8 @@ section {
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -106,6 +106,10 @@ section {
 
 .about-right {
     flex: 1;
+}
+
+.about-right p {
+    text-align: justify;
 }
 
 .about-right h2 {
